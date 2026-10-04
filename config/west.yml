@@ -4,11 +4,24 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
+    - name: m165437
+      url-base: https://github.com/M165437
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    # German (and other) locale key codes: #include <locale/keys_de.h> in the keymap.
+    # The explicit revision is required: defaults.revision (v0.3) does not exist in this repo.
+    - name: zmk-locales
+      remote: joelspadin
+      revision: main
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
   self:
     path: config
