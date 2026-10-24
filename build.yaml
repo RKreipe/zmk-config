@@ -17,9 +17,12 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
+# nice_view_adapter provides the `nice_view_spi` bus on the Lily58's OLED header
+# (CS bodged to pro-micro pin D1); nice_view_gem is the custom nice!view status
+# screen from the nice-view-gem module in config/west.yml. Keep the order.
 ---
 include:
   - board: nice_nano
-    shield: lily58_left nice_view_gem
+    shield: lily58_left nice_view_adapter nice_view_gem
   - board: nice_nano
-    shield: lily58_right nice_view_gem
+    shield: lily58_right nice_view_adapter nice_view_gem

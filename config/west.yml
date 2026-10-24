@@ -11,6 +11,7 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
+    # ZMK itself: takes defaults.revision (v0.3). Must match the @v0.3 workflow in .github/workflows/build.yml.
     - name: zmk
       remote: zmkfirmware
       revision: main
@@ -20,6 +21,7 @@ manifest:
     - name: zmk-locales
       remote: joelspadin
       revision: main
+    # nice!view custom status screen. Its README: ZMK v0.3 -> release v0.3.0, ZMK main -> main.
     - name: nice-view-gem
       remote: m165437
       revision: main
