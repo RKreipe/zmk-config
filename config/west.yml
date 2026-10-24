@@ -14,7 +14,7 @@ manifest:
     # ZMK itself: takes defaults.revision (v0.3). Must match the @v0.3 workflow in .github/workflows/build.yml.
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # revision: main
       import: app/west.yml
     # German (and other) locale key codes: #include <locale/keys_de.h> in the keymap.
     # The explicit revision is required: defaults.revision (v0.3) does not exist in this repo.
@@ -24,6 +24,7 @@ manifest:
     # nice!view custom status screen. Its README: ZMK v0.3 -> release v0.3.0, ZMK main -> main.
     - name: nice-view-gem
       remote: m165437
-      revision: main
+      revision: v0.3.0
+      # revision: main
   self:
     path: config
