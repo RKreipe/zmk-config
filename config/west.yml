@@ -18,7 +18,7 @@ manifest:
       remote: joelspadin
       revision: main
     # nice!view custom status screen
-    - name: nice-nice-oled
+    - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
   self:
