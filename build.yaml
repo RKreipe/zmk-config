@@ -22,7 +22,7 @@
 # screen from the nice-view-gem module in config/west.yml. Keep the order.
 ---
 include:
-  - board: nice_nano//zmk
+  - board: nice_nano
     shield: lily58_left nice_view_adapter nice_epaper
-  - board: nice_nano//zmk
+  - board: nice_nano
     shield: lily58_right nice_view_adapter nice_epaper
